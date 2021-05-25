@@ -43,14 +43,15 @@ const Game = () => {
         </li>
       );
     });
-
+  
+  //Retorno de web
   return (
     <>
-      <h1> Ta Te Ti en React con Hooks</h1>
+      <h1> Ta Te Ti para Programacion Avanzada</h1>
       <Board tiles={history[stepNumber]} onClick={handleClick} />
       <div className="info-wrapper">
         <div>
-          <h3>Historial</h3>
+          <h3>Historial de Movimientos</h3>
           {renderMoves()}
         </div>
         <h3>{winner ? "Ganador: " + winner : "Turno de: " + xO}</h3>
